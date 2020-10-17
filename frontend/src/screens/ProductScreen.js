@@ -15,7 +15,7 @@ const ProductScreen = ({match}) => { //props.match
     }
 
     fetchProduct()
-  }, [])
+  }, [match])
   
   return (
     <>
