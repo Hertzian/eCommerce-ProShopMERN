@@ -9,7 +9,7 @@ import { listProductDetails } from '../actions/productActions'
 
 const ProductScreen = ({ history, match }) => {
   //props.match
-  const [qty, setQty] = useState(0)
+  const [qty, setQty] = useState(1)
 
   console.log(match, history)
 
