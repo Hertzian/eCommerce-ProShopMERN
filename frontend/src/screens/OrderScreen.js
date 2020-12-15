@@ -29,7 +29,8 @@ const OrderScreen = ({ match }) => {
     if(!order || order._id !== orderId){
       dispatch(getOrderDetails(orderId))
     }
-  }, [dispatch, orderId])
+  }, [dispatch, orderId, order])
+  // eslint-disable-next-line
 
   return loading ? (
     <Loader />
@@ -115,7 +116,6 @@ const OrderScreen = ({ match }) => {
                 <h2>Order summary</h2>
               </ListGroup.Item>
               <ListGroup.Item>
-                {console.log(order)}
                 <Row>
                   <Col>Items</Col>
                   <Col>${order.itemsPrice}</Col>
